@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+SQLAlchemy
+pydantic[email]
+envparse
+psycopg2
+asyncpg
+alembic
