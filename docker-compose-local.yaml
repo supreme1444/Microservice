@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  db:
+    container_name: "db"
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      - POSSTGRES_USER = postgres
+      - POSSTGRES_PASSWORD = 1234
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - costom
+networks:
+  costom:
+    driver: bridge
